@@ -3,12 +3,60 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: fffffe;
+    background-color: var(--bgbody);
     text-align: center;
+    font-family: 'Fredoka One', cursive;
+}
+:root{
+    --bgbody: #fffffe;
+    --bgcard: #0f0e17;
+    --title: #e53170;
+    --textcard:white;
 }
 /* #endregion basic properties  */
 
-h1{
-    color: #e53170;
-    font-family: 'Fredoka One', cursive;
+/* #region utility properties */
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
 }
+
+.cards img{
+    margin-right: 20px;
+}
+
+.data{
+    display: inline-block;
+    vertical-align: top;
+    text-align: left; 
+    padding-right:15px;
+}
+/* #endregion utility properties */
+
+h1{
+    color: var(--title);
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container > p{
+    margin-bottom: 40px;
+}
+
+.section{
+    margin: auto;
+}
+.container-cards .cards{
+    width:calc(100% / 3);
+    float: left;
+    color: var(--textcard);
+    text-align: left;
+    background-color: var(--bgcard); 
+    margin-bottom: 1rem;
+}
+
+
