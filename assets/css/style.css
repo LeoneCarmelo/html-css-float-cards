@@ -1,8 +1,12 @@
 /* #region basic properties */
-body{
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
     background-color: var(--bgbody);
     text-align: center;
     font-family: 'Fredoka One', cursive;
@@ -28,14 +32,19 @@ body{
 
 .data{
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
     text-align: left; 
     padding-right:15px;
+}
+
+.margin{
+    margin:13px 0;
 }
 /* #endregion utility properties */
 
 h1{
     color: var(--title);
+    margin: 30px;
 }
 
 .container{
@@ -51,12 +60,22 @@ h1{
     margin: auto;
 }
 .container-cards .cards{
-    width:calc(100% / 3);
+    width:calc(100% / 3 - 2.5rem);
     float: left;
     color: var(--textcard);
     text-align: left;
     background-color: var(--bgcard); 
     margin-bottom: 1rem;
+    margin-right: 1.25rem;
+    margin-left: 1.25rem;
+    box-shadow: 2px 2px 4px grey,
+               -2px -2px 4px grey;
 }
+
+.cards img {
+    height: 120px;
+    float: left;
+}
+
 
 
