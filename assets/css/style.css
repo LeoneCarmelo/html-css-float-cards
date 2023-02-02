@@ -3,5 +3,12 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: fffffe;
+    text-align: center;
 }
 /* #endregion basic properties  */
+
+h1{
+    color: #e53170;
+    font-family: 'Fredoka One', cursive;
+}
